@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brochure</title>
+        <link rel="stylesheet" href="indexstyle.css">
+    </head>
+    <body>
+
+    <!--HEADER VIDEO-->    
+        <header>                
+        <video controls id="tag"><source src="Brochure.mp4" type="video/mp4"></video></div>               
+
+
+   
+        </header>   
+    </body>
+    
+     
+
+    <!--SCRIPT DE DESACTIVATION TEMPORAIRE DU BOUTON PAGE SUIVANTE-->
+    <script>
+           const button = document.getElementById("Button");
+           
+           function name() {
+              return new Promise(res => {
+                    setTimeout(() => {
+                              res();
+                                }, 2700);
+                              });
+                            }
+                            
+           button.addEventListener('click', async () => {
+              button.disabled = true;
+                await name();
+                  button.disabled = false;
+                  });
+    </script>
+</html>
+
+    <!--SCRIPT DE COMMANDE DU BOUTON PAGE SUIVANTE-->
+    <script>          
+
+            function vidplay() {    
+                var video = document.getElementById("tag");
+                var button = document.getElementById("play");
+                 if (video.paused) {
+                              video.play();} 
+                 else {
+                              video.play();
+                 }
+                }
+    
+    var video = document.getElementById('tag');
+    video.addEventListener("timeupdate", tick); 
+      
+    var video = document.getElementById('tag');
+    video.addEventListener("timeupdate", tock);        
+
+    var video = document.getElementById('tag');
+    video.addEventListener("timeupdate", tack);   
+    
+    var video = document.getElementById('tag');
+    video.addEventListener("timeupdate", tuck);     
+    
+
+            function tick(e) {   
+                var t = this.currentTime;
+                 if (t >= 2.5) {
+                    this.pause();
+                    video.removeEventListener("timeupdate", tick);              
+            }
+        }
+            function tock(e) {
+                var t = this.currentTime;
+                 if (t >= 4.5) {
+                    this.pause();
+                    video.removeEventListener("timeupdate", tock);            
+            }
+        }
+            function tack(e) {
+                var t = this.currentTime;
+                 if (t >= 6.3) {
+                    this.pause();
+                    video.removeEventListener("timeupdate", tack);            
+            }
+        }
+            function tuck(e) {
+                var t = this.currentTime;
+                 if (t >= 6.6) {                      
+                 location.reload();
+            }
+        }   
+    </script>   

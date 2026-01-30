@@ -1,0 +1,65 @@
+/* Importation des Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {  
+    width:1280px;
+    height: 587px;;
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    font-family: "Raleway", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+
+/* VIDEO */
+video {
+    top: 0px;
+    left: 0px;
+    width: 822px;
+    
+    filter: contrast(1.2);
+    
+}
+
+/* BOUTON SUIVANT */
+button {    
+    top: 530px;
+   left: -80px;
+    width: 70px;
+    height: 25px;
+    border-radius:2rem;
+    padding:5px;
+    text-decoration: none;
+    position: absolute;
+    z-index: 0;
+    max-inline-size: 100%;
+   block-size: auto;
+   aspect-ratio: 2/1;
+   object-fit: contain;
+   object-position:100%;
+}
+
+/* TEXTE BOUTANT SUIVANT */p {
+    top: -28px;
+   left: 1270px;
+    position: absolute;
+    z-index: 0; 
+    font-size: 14px;
+    color: #fff;
+    /*max-inline-size: 100%;
+   block-size: auto;
+   aspect-ratio: 2/1;
+   object-fit: contain;
+   object-position:100%;*/
+
+}
+
+
+
+/* ADAPTABLE ECRAN TABLETTE ET AUTRES 
+@media screen and (max-width:810px){
+    .video-brochure video {
+    width: 100%;}
+}*/
